@@ -1,4 +1,5 @@
 import alg.Alg;
+import alg.FIFO;
 
 import java.util.ArrayList;
 
@@ -12,13 +13,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Alg> algArrayList = new ArrayList<>();
-
-
-
-
-
         Test test = new Test(1000, 20, 50);
+
+        ArrayList<Alg> algArrayList = new ArrayList<>();
+        algArrayList.add(new FIFO(test.getWielkoscRam()));
+
 
         for (Alg alg: algArrayList) {
             Main.czas = 0;
@@ -27,10 +26,10 @@ public class Main {
             }
 
             System.out.println("Ilosc elem:" + test.getIloscElementow() +
-                    "Ilosc RAM: " + test.getWielkoscRam() +
-                    "Ilosc Pamieci: " + test.getWielkoscPamieci() +
-                    "Algorytm: " + alg.toString() +
-                    "Ilosc error: " + alg.getLiczbaError());
+                    " Ilosc RAM: " + test.getWielkoscRam() +
+                    " Ilosc Pamieci: " + test.getWielkoscPamieci() +
+                    " Algorytm: " + alg.toString() +
+                    " Ilosc error: " + alg.getLiczbaError());
         }
 
     }
