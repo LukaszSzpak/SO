@@ -12,6 +12,7 @@ public class Test {
         this.wielkoscRam = wielkoscRam;
         this.wielkoscPamieci = wielkoscPamieci;
 
+        this.list = new ArrayList<>();
         this.losujTablice();
     }
 
