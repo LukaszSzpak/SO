@@ -4,5 +4,8 @@ public class Strona {
     public Strona() {
         this.ostatnieUzycie = Main.getCzas();
     }
+    public void dostep() {
+        this.ostatnieUzycie = Main.getCzas();
+    }
 
 }
