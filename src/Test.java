@@ -1,5 +1,3 @@
-package alg;
-
 import java.util.ArrayList;
 import java.util.Random;
 
