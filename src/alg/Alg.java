@@ -1,4 +1,4 @@
-package alg;
+package src.alg;
 
 public abstract class Alg {
     protected int liczbaError;
