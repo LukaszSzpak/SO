@@ -1,4 +1,4 @@
-package alg;
+package src.alg;
 
 import java.util.LinkedList;
 import java.util.Queue;

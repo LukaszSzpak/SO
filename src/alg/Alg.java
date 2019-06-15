@@ -18,4 +18,6 @@ public abstract class Alg {
         return liczbaError;
     }
 
+    abstract void zastStrony(int address);
+
 }
