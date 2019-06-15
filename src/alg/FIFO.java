@@ -28,7 +28,8 @@ public class FIFO extends Alg{
         return true;
     }
 
-    private void zastStrony(int adresStrony) {
+    @Override
+    protected void zastStrony(int adresStrony) {
         addresses.remove();
         addresses.add(adresStrony);
     }

@@ -1,3 +1,5 @@
+package src;
+
 public class Strona {
     private int ostatnieUzycie;
 
@@ -8,4 +10,7 @@ public class Strona {
         this.ostatnieUzycie = Main.getCzas();
     }
 
+    public int getOstatnieUzycie() {
+        return ostatnieUzycie;
+    }
 }

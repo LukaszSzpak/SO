@@ -1,4 +1,6 @@
-import alg.Alg;
+package src;
+
+import src.alg.Alg;
 
 import java.util.ArrayList;
 
@@ -13,10 +15,6 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Alg> algArrayList = new ArrayList<>();
-
-
-
-
 
         Test test = new Test(1000, 20, 50);
 
