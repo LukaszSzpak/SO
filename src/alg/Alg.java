@@ -17,5 +17,4 @@ public abstract class Alg {
     public int getLiczbaError() {
         return liczbaError;
     }
-
 }
