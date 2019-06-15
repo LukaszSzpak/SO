@@ -1,4 +1,4 @@
-package src.alg;
+package alg;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,23 +6,29 @@ import java.util.Queue;
 public class FIFO extends Alg{
 
     public Queue<Integer> addresses;
-    int size = 0;
+    int size;
 
     public FIFO(int pojemnoscPamieci) {
         super(pojemnoscPamieci);
+        this.size = pojemnoscPamieci;
     }
 
     @Override
     protected void utworzPamiec(int pojemnosc) {
         addresses = new LinkedList<Integer>();
-        size = pojemnosc;
     }
 
     @Override
     public boolean check(int adresStrony) {
         if(!addresses.contains(adresStrony)){
+
+            if (this.addresses.size() < this.size) {
+                this.addresses.add(adresStrony);
+            } else {
+                zastStrony(adresStrony);
+            }
             error();
-            zastStrony(adresStrony);
+
             return false;
         }
         return true;
