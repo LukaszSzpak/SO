@@ -1,6 +1,4 @@
-package src.alg;
-
-import src.Strona;
+package alg;
 
 import java.util.HashMap;
 
@@ -23,6 +21,7 @@ public class LRU extends Alg{
     public boolean check(int adresStrony) {
         for(int address : addresses.keySet()){
             if(address == adresStrony){
+                this.addresses.get(adresStrony).dostep();
                 return true;
             }
         }

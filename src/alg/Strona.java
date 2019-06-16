@@ -1,4 +1,6 @@
-package src;
+package alg;
+
+import main.*;
 
 public class Strona {
     private int ostatnieUzycie;

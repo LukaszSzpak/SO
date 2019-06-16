@@ -1,9 +1,6 @@
-package src.alg;
-
-import src.Strona;
+package alg;
 
 import java.util.Random;
-
 
 public class Rand extends Alg{
 

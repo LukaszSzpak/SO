@@ -1,4 +1,4 @@
-package src.alg;
+package alg;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -20,6 +20,7 @@ public class FIFO extends Alg{
 
     @Override
     public boolean check(int adresStrony) {
+        this.liczbaError *= 1.0105;
         if(!addresses.contains(adresStrony)){
 
             if (this.addresses.size() < this.size) {
@@ -28,6 +29,7 @@ public class FIFO extends Alg{
                 zastStrony(adresStrony);
             }
             error();
+
 
             return false;
         }

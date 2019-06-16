@@ -1,6 +1,7 @@
-package src;
+package main;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Random;
 
 public class Test {
@@ -16,6 +17,7 @@ public class Test {
 
         this.list = new ArrayList<>();
         this.losujTablice();
+        this.list.sort(Integer::compareTo);
     }
 
     private void losujTablice() {
@@ -23,6 +25,7 @@ public class Test {
 
         for (int i = 0; i < this.iloscElementow; i++) {
             this.list.add(rand.nextInt(this.wielkoscPamieci));
+            //this.list.add((int)(rand.nextGaussian() * this.wielkoscPamieci/2 + this.wielkoscPamieci/2));
         }
     }
 
