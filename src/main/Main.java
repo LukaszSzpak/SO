@@ -27,7 +27,7 @@ public class Main {
                 Main.czas++;
             }
 
-            System.out.println("Ilosc elem:" + test.getIloscElementow() +
+            System.out.println("Ilosc elem: " + test.getIloscElementow() +
                     " Ilosc RAM: " + test.getWielkoscRam() +
                     " Ilosc Pamieci: " + test.getWielkoscPamieci() +
                     " Algorytm: " + alg.toString() +
