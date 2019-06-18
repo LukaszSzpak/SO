@@ -34,4 +34,8 @@ public class Rand extends Alg{
             int roll = rand.nextInt(addresses.length);
             addresses[roll] = address;
         }
+
+        public String toString() {
+            return "RAND";
+        }
 }

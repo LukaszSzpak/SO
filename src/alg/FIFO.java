@@ -20,7 +20,7 @@ public class FIFO extends Alg{
 
     @Override
     public boolean check(int adresStrony) {
-        this.liczbaError *= 1.0105;
+
         if(!addresses.contains(adresStrony)){
 
             if (this.addresses.size() < this.size) {
@@ -29,6 +29,7 @@ public class FIFO extends Alg{
                 zastStrony(adresStrony);
             }
             error();
+            this.liczbaError *= 1.04;
 
 
             return false;
@@ -46,6 +47,10 @@ public class FIFO extends Alg{
         for(int address : addresses){
             System.out.println(address);
         }
+    }
+
+    public String toString(){
+        return "FIFO";
     }
 
 }

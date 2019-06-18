@@ -44,5 +44,8 @@ public class LRU extends Alg{
         addresses.put(address, new Strona());
     }
 
+    public String toString() {
+        return "LRU";
+    }
 
 }

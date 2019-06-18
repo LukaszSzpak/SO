@@ -29,6 +29,7 @@ public class Test {
         }
     }
 
+
     public int getWielkoscPamieci() {
         return wielkoscPamieci;
     }

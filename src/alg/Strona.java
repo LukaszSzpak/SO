@@ -1,6 +1,6 @@
 package alg;
 
-import main.*;
+import main.Main;
 
 public class Strona {
     private int ostatnieUzycie;

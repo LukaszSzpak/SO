@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Test test = new Test(1000, 20, 100);
+        Test test = new Test(1000, 10, 50);
 
         ArrayList<Alg> algArrayList = new ArrayList<>();
         algArrayList.add(new FIFO(test.getWielkoscRam()));
